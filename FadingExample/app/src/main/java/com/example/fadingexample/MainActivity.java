@@ -12,11 +12,11 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageViewA = findViewById(R.id.imageViewA);
         ImageView imageViewB = findViewById(R.id.imageViewB);
         if(imageViewA.getAlpha() == 0){
-            imageViewA.animate().alpha(1).setDuration(2000);
-            imageViewB.animate().alpha(0).setDuration(2000);
+            imageViewA.animate().scaleX(1).scaleY(1).alpha(1).setDuration(2000);
+            imageViewB.animate().scaleX(0).scaleY(0).alpha(0).setDuration(2000);
         } else {
-            imageViewA.animate().alpha(0).setDuration(2000);
-            imageViewB.animate().alpha(1).setDuration(2000);
+            imageViewA.animate().scaleX(0).scaleY(0).alpha(0).setDuration(2000);
+            imageViewB.animate().scaleX(1).scaleY(1).alpha(1).setDuration(2000);
         }
     }
     @Override
